@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-12" style="text-align: center;justify-content: center; background-color: aqua; border-radius: 50px;">
+            <img src="./logo2.png" height="100px" width="100px">
+            <h1 style="color: blue;text-align: center;">TELANGANA STATE ROAD TRANSPORT CORRPORATION</h1>
+            <h1 style="color: black;text-align: center;">GENERAL BUS PASS APPLPICATION</h1>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div style=" background-color:azure; border-radius: 50px;">
+      <form action="">
+        <fieldset>
+          <legend>Application Details</legend>
+          <label for="name">Name <span style="color: red;">*</span></label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="text" id="name" name="name" >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <label for="father name">Father's /Gurdian's Name <span style="color: red;">*</span></label>&ensp;&ensp;
+          <input type="text" id="father name" name="father name">&ensp;&ensp;&ensp;&ensp;<br><br>
+          <label for="dob">Date of Birth <span style="color: red;">*</span></label>&ensp;&ensp;
+          <input type="date" id="dob" name="dob"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <label for="gender">Gender <span style="color: red;">*</span></label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="radio" id="female" name="gender">
+          <label for="female" >Female</label>
+          <input type="radio" id="male" name="gender">
+          <label for="male">Male</label><br><br>
+          <label for="age">Age As on :</label>
+          <input type="number" id="years" name="years" placeholder="Years" style="width: 50px;">YYYY
+          <input type="number" id="months" name="months" placeholder="Months" style="width: 50px;">MM
+          <input type="number" id="days" name="days" placeholder="Days" style="width: 50px;">DD &ensp;&ensp;
+          <label for="aadhar">Aadhaar Number<span style="color: red;">*</span></label>
+          <input type="number" id="aadhar" name="aadhar" minlength="10" maxlength="10" max="12"><br><br>
+          <label for="aadhar">WhatsApp No<span style="color: red;">*</span></label>
+          <input type="number" id="whatsapp" name="whatsapp" minlength="12" maxlength="12" max="12">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <label for="mail">E-mail ID<span style="color: red;">*</span></label>
+          <input type="text" id="mail" name="mail" minlength="12" maxlength="12" max="12"><br><br>
+          <label for="photo">Photo<span style="color: red;">*</span></label>
+          <input type="file" accept=".png, .jpeg">
+        </fieldset>
+        <!-- =============================================================================================================================================-->
+        <fieldset>
+          <legend>Resendential Address Details</legend>
+          <div style="display: inline-block;">
+            <textarea id="address" name="address" maxlength="20"></textarea><br>
+            <span class="note">(Maximum characters: 20)</span><br>
+            <span class="counter-box">
+              You have <input type="text" id="charCount" class="counter" value="20" readonly> characters left.
+            </span>
+          </div>&ensp;&ensp;&ensp;&ensp;&ensp;
+
+          <label for="district">District<span style="color: red;">*</span></label>
+          <select name="district" id="district">
+            <option value="district" >Select the district</option>
+            <option value="district">Kukkatpally</option>
+            <option value="district">Mehadipatnam</option>
+            <option value="district">Miyapur</option>
+            <option value="district">Ameerpet</option>
+            <option value="district">Shaikpet</option>
+            <option value="district">Lakdikapul</option>
+          </select><br><br>
+          <label for="mandal">Mandal<span style="color: red;">*</span></label>
+          <select name="mandal" id="mandal">
+            <option value="mandal" >Select the district</option>
+            <option value="mandal">	Amberpet</option>
+            <option value="mandal">	Charminar</option>
+            <option value="mandal">	Himayathnagar</option>
+            <option value="mandal">	Khairatabad</option>
+            <option value="mandal"> Shaikpet</option>
+            <option value="mandal">	Saidabad</option>
+            <option value="mandal">	Secunderabad</option>
+            <option value="mandal">	Nampally</option>
+            <option value="mandal">	Musheerabad</option>
+            <option value="mandal">	Tirumalagiri</option>
+          </select>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <label for="village">Village<span style="color: red;">*</span></label>
+          <select name="vilage" id="village">
+            <option value="village">Amberpet</option>
+            <option value="village">Drainage Lingampally</option>
+            <option value="village">Malakpet</option>
+            <option value="village">Hasanaliguda</option>
+            <option value="village">Nampally</option>
+            <option value="village">Saidhabad</option>
+            <option value="village">Kandikal</option>
+            <option value="village">Sultan Bagh</option>
+            <option value="village">Teegalguda</option>
+            <option value="village">Kulsumpura</option>
+          </select><br><br>
+          <label for="pincode">Pincode <span style="color: red;">*</span></label>
+          <input type="number" min="=6" max="6" minlength="6" maxlength="6">
+        </fieldset>
+
+        <fieldset>
+          <legend>Pass type Details</legend>
+          <label for="city">City<span style="color: red;">*</span></label>
+          <select name="city" id="city">
+            <option value="city" >Select the city</option>
+            <option value="city">	Amberpet</option>
+            <option value="city">	Charminar</option>
+            <option value="city">	Himayathnagar</option>
+            <option value="city">	Khairatabad</option>
+            <option value="city"> Shaikpet</option>
+            <option value="city">	Saidabad</option>
+            <option value="city">	Secunderabad</option>
+            <option value="city">	Nampally</option>
+            <option value="city">	Musheerabad</option>
+            <option value="city">	Tirumalagiri</option>
+          </select><br><br>
+          <label for="Passtype">Pass Type<span style="color: red;">*</span></label>
+          <select name="Passtype" id="Passtype">
+            <option value="Passtype" >-----Select----</option>
+            <option value="Passtype">	GREATER PASS</option>
+            <option value="Passtype">	GENERAL ORDINARY ROUTE PASS MTLY</option>
+            <option value="Passtype">	ORDINARY PASS</option>
+            <option value="Passtype">	METRO EXPRESS PASS</option>
+            <option value="Passtype"> GENERAL METRO EXPRESS ROUTE MYLT</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Mode of Payment & Pass Collection</legend>
+          <label for="paymentmode">Paymennt Mode <span style="color: red;">*</span></label>
+          <select name="paymentmode" id="paymentmode">
+            <option value="paymentmode">Select the payment Mode</option>
+            <option value="paymentmode">Payonline</option>
+            <option value="paymentmode">Pay at Counter</option>
+          </select><br><br>
+          <label for="delivermode">Pass Delivery Mode <span style="color: red;">*</span></label>
+          <select name="delivermode" id="delivermode">
+            <option value="delivermode">Select Pass Delivery Mode</option>
+            <option value="delivermode">At Coounter</option>
+          </select><br><br>
+          <label for="selectcenter">Center at Which you wnat to Collect Pass <span style="color: red;">*</span></label>
+          <select name="selectcenter" id="selectcenter">
+            <option value="selectcenter">----select----</option>
+            <option value="selectcenter">RTC LB NAGAR -- HYD [ 30/04/2025 ]</option>
+            <option value="selectcenter">RTC LINGAMPALLY -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">LOTHUKUNTA -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC MEDCHAL -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC MEHDIPATNAM -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC MIDHANI -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC MOINABAD -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC NGOS COLONY -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC PATANCHERU -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC RATHIFILE -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC RISALABAZAR -- HYD [ 30/04/2025 ] </option>
+            <option value="selectcenter">RTC SR NAGAR -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC SUCHITRA -- HYD [ 01/05/2025 ] </option>
+            <option value="selectcenter">RTC TARNAKA -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC PATANCHERU -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC RISALABAZAR -- HYD [ 30/04/2025 ]</option>
+            <option value="selectcenter">RTC RATHIFILE -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC RISALABAZAR -- HYD [ 30/04/2025 ] </option>
+            <option value="selectcenter">RTC SR NAGAR -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC SUCHITRA -- HYD [ 01/05/2025 ] </option>
+            <option value="selectcenter">RTC TARNAKA -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC PATANCHERU -- HYD [ 01/05/2025 ]</option>
+            <option value="selectcenter">RTC RISALABAZAR -- HYD [ 30/04/2025 ]</option>
+          </select>
+        </fieldset>
+
+      </form>
+
+    </div>
+    <!-- <div style="text-align: center;justify-content: center; background-color:skyblue; border-radius: 50px;"> -->
+      
+    <h1 style="text-align:center;height: 35px; width: 120px;background-color: red;color: azure; border-left-width: 100px;">27XH0n</h1>
+    <img src="./retry.jpg" style="height: 30px;width: 30px;vertical-align: middle;margin-left: 10px;cursor: pointer;" alt="Refresh">
+    <input type="text" placeholder="Enter CAPTCHA"><br>
+    <input type="submit" value="submit">
+
+    
+
+
+
+</body>
+</html>
